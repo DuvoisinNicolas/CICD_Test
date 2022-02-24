@@ -1,13 +1,17 @@
-
 def programIsWorking():
-	print("OK")
+	return 1
 
 def programIsntWorking():
-	print("KO")
+	return -1
 
-if __name == "__main__":
-	shouldBeTo1 = 1
-	if shouldBeTo1 == 1:
-		programIsWorking()
+def myFunction():
+	result = -1
+	shouldBeSetTo1 = 1
+	if shouldBeSetTo1 == 1:
+		result = programIsWorking()
 	else:
-		programIsntWorking()
+		result = programIsntWorking()
+	return result
+
+if __name__ == "__main__":
+	myFunction()
