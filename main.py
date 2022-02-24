@@ -19,8 +19,7 @@ def myFunction():
 	if shouldBeSetTo1 == 1:
 		result = programIsWorking()
 	else:
-		result = programIsntWorking()	
-	
+		result = programIsntWorking()
 	return result
 
 if __name__ == "__main__":
